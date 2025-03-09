@@ -1,6 +1,6 @@
-//your JS code here. If required.
-let btn = document.getElementById('enterBtn');
-btn.addEventListener('click',function (event) {
-    let p_val = document.getElementById('status');
-    p_val.innerHTML='<h1>Enter Metaverse</h1>';
+document.getElementById('enterBtn').addEventListener('click', () => {
+    const status = document.getElementById('status');
+    if (status.textContent === 'Enter the Metaverse') {
+        status.innerHTML = '<h1>Entered Metaverse</h1>';
+    }
 })
